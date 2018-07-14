@@ -1,0 +1,33 @@
+{
+	"name": "dashmin",
+	"version": "1.0.0",
+	"description": "Free admin dashboard based on bootstrap 4.x",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dacoto/dashmin.git"
+	},
+	"keywords": [
+		"bootstrap",
+		"dashboard",
+		"jquery",
+		"admin",
+		"template",
+		"theme"
+	],
+	"author": "dacoto",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/dacoto/dashmin/issues"
+	},
+	"homepage": "https://github.com/dacoto/dashmin#readme",
+	"dependencies": {
+		"alertifyjs": "1.11.1",
+		"bootstrap": "4.1.2",
+		"@fortawesome/fontawesome-free": "5.1.0",
+		"icheck": "1.0.2",
+		"jquery": "3.3.1",
+		"popper.js": "1.14.3",
+		"select2": "4.0.5",
+		"toastr": "2.1.4"
+	}
+}
