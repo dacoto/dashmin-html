@@ -38,55 +38,60 @@
         <div class="d-flex">
             <div class="sidebar sidebar-dark bg-dark">
                 <ul class="list-unstyled">
-                    <li class="active"><a href="index.html"><i class="icon fa fa-home"></i> Home</a></li>
+                    <li><a href="index.html"><i class="icon fa fa-home"></i> Home</a></li>
                     <li><a href="forms.html"><i class="icon fa fa-edit"></i> Forms</a></li>
-                    <li><a href="tables.html"><i class="icon fa fa-table"></i> Tables</a></li>
+                    <li class="active"><a href="tables.html"><i class="icon fa fa-table"></i> Tables</a></li>
                     <li><a href="login.html"><i class="icon fa fa-sign-in-alt"></i> Login</a></li>
                 </ul>
             </div>
             <div class="content p-4">
-                <h2 class="mb-4">Home</h2>
-                <div class="row mb-4">
-                    <div class="col-md">
-                        <div class="d-flex border">
-                            <div class="bg-primary text-light p-4">
-                                <div class="d-flex align-items-center h-100">
-                                    <i class="fa fa-3x fa-fw fa-cog"></i>
-                                </div>
+                <h2 class="mb-4">Tables</h2>
+                <div class="card mb-4" id="table">
+                    <div class="card-header bg-white">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 font-weight-bold">
+                                List.js Table
                             </div>
-                            <div class="flex-grow-1 bg-white p-4">
-                                <p class="text-uppercase text-secondary mb-0">Usage</p>
-                                <h3 class="font-weight-bold mb-0">10%</h3>
+                            <div class="col-md-5">
+                                <div class="input-group">
+                                    <input class="form-control search" placeholder="Search" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary sort" data-sort="name">Sort by name</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md">
-                        <div class="d-flex border">
-                            <div class="bg-success text-light p-4">
-                                <div class="d-flex align-items-center h-100">
-                                    <i class="fa fa-3x fa-fw fa-comments"></i>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 bg-white p-4">
-                                <p class="text-uppercase text-secondary mb-0">Tickets</p>
-                                <h3 class="font-weight-bold mb-0">374</h3>
-                            </div>
-                        </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th width="80%">Name</th>
+                                    <th width="20%">Born</th>
+                                </tr>
+                            </thead>
+                            <tbody class="list">
+                                <tr>
+                                    <td class="name">Jonny Stromberg</td>
+                                    <td class="born">1986</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Jonas Arnklint</td>
+                                    <td class="born">1985</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Martina Elm</td>
+                                    <td class="born">1986</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Gustaf Lindqvist</td>
+                                    <td class="born">1983</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination justify-content-end"></ul>
                     </div>
-                    <div class="col-md">
-                        <div class="d-flex border">
-                            <div class="bg-danger text-light p-4">
-                                <div class="d-flex align-items-center h-100">
-                                    <i class="fa fa-3x fa-fw fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 bg-white p-4">
-                                <p class="text-uppercase text-secondary mb-0">Sales</p>
-                                <h3 class="font-weight-bold mb-0">73,829</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div>            
             </div>
         </div>
         <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -99,5 +104,13 @@
         <script src="assets/vendor/toastr/toastr.min.js"></script>
         <script src="assets/js/scripts.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script>
+            var options = {
+                valueNames: [ 'name', 'born' ],
+                page: 10,
+                pagination: true
+            };
+            var tableList = new List('table', options);
+        </script>
     </body>
 </html>
