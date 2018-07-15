@@ -48,13 +48,37 @@
                 <h2 class="mb-4">Forms</h2>
                 <div class="card mb-4">
                     <div class="card-header bg-white font-weight-bold">
-                        Cards as Panels
+                        Select2
                     </div>
                     <div class="card-body">
-                        This is a simple example using a card as a panel.
+                        <div class="form-group">
+                            <label for="select2">Select Options</label>
+                            <select name="select2" id="select2" class="form-control select2">
+                                <option>Option</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="card-footer bg-white">
-                        I am a card footer.
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header bg-white font-weight-bold">
+                        iCheck
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label><input type="checkbox" name="checkbox[]">&nbsp;&nbsp;Checkbox</label><br>
+                                <label><input type="checkbox" name="checkbox[]" checked>&nbsp;&nbsp;Checkbox checked</label><br>
+                                <label><input type="checkbox" name="checkbox[]" disabled checked>&nbsp;&nbsp;Checkbox disabled</label><br>
+                            </div>
+                            <div class="col-md-6">
+                                <label><input type="radio" name="radio">&nbsp;&nbsp;Radio</label><br>
+                                <label><input type="radio" name="radio" checked>&nbsp;&nbsp;Radio checked</label><br>
+                                <label><input type="radio" name="radio" disabled checked>&nbsp;&nbsp;Radio disabled</label><br>
+                            </div>
+                        </div>
                     </div>
                 </div>            
             </div>
@@ -69,5 +93,16 @@
         <script src="assets/vendor/toastr/toastr.min.js"></script>
         <script src="assets/js/scripts.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script>
+            $(document).ready(function(){
+                // Select2
+                $('.select2').select2();
+                // iCheck
+                $('input').iCheck({
+                    checkboxClass: 'icheckbox_square-blue',
+                    radioClass: 'iradio_square-blue',
+                });
+            });
+        </script>
     </body>
 </html>
