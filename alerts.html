@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>dashmin</title>
+        <title>dashmin - Alerts</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="assets/img/brand/icon.png">
         <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
@@ -38,54 +38,30 @@
         <div class="d-flex">
             <div class="sidebar sidebar-dark bg-dark">
                 <ul class="list-unstyled">
-                    <li class="active"><a href="index.html"><i class="icon fa fa-home"></i> Home</a></li>
+                    <li><a href="index.html"><i class="icon fa fa-home"></i> Home</a></li>
                     <li><a href="forms.html"><i class="icon fa fa-edit"></i> Forms</a></li>
-                    <li><a href="alerts.html"><i class="icon fa fa-comment-alt"></i> Alerts</a></li>
+                    <li class="active"><a href="alerts.html"><i class="icon fa fa-comment-alt"></i> Alerts</a></li>
                     <li><a href="tables.html"><i class="icon fa fa-table"></i> Tables</a></li>
                     <li><a href="login.html"><i class="icon fa fa-sign-in-alt"></i> Login</a></li>
                 </ul>
             </div>
             <div class="content p-4">
-                <h2 class="mb-4">Home</h2>
-                <div class="row mb-4">
-                    <div class="col-md">
-                        <div class="d-flex border">
-                            <div class="bg-primary text-light p-4">
-                                <div class="d-flex align-items-center h-100">
-                                    <i class="fa fa-3x fa-fw fa-cog"></i>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 bg-white p-4">
-                                <p class="text-uppercase text-secondary mb-0">Usage</p>
-                                <h3 class="font-weight-bold mb-0">10%</h3>
-                            </div>
-                        </div>
+                <h2 class="mb-4">Alerts</h2>
+                <div class="card mb-4">
+                    <div class="card-header bg-white font-weight-bold">
+                        Alertify
                     </div>
-                    <div class="col-md">
-                        <div class="d-flex border">
-                            <div class="bg-success text-light p-4">
-                                <div class="d-flex align-items-center h-100">
-                                    <i class="fa fa-3x fa-fw fa-comments"></i>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 bg-white p-4">
-                                <p class="text-uppercase text-secondary mb-0">Tickets</p>
-                                <h3 class="font-weight-bold mb-0">374</h3>
-                            </div>
-                        </div>
+                    <div class="card-body">
+                        <button class="btn btn-success" onclick="alertifySimple();">Simple Alert</button>
+                        <button class="btn btn-danger" onclick="alertifyConfirm();">Confirm Alert</button>
                     </div>
-                    <div class="col-md">
-                        <div class="d-flex border">
-                            <div class="bg-danger text-light p-4">
-                                <div class="d-flex align-items-center h-100">
-                                    <i class="fa fa-3x fa-fw fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 bg-white p-4">
-                                <p class="text-uppercase text-secondary mb-0">Sales</p>
-                                <h3 class="font-weight-bold mb-0">73,829</h3>
-                            </div>
-                        </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header bg-white font-weight-bold">
+                        Toastr
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-success" onclick="toastrSimple();">Simple Alert</button>
                     </div>
                 </div>
             </div>
@@ -100,5 +76,18 @@
         <script src="assets/vendor/toastr/toastr.min.js"></script>
         <script src="assets/js/scripts.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script>
+            // alertify
+            function alertifySimple() {
+                alertify.alert('Simple alert');
+            }
+            function alertifyConfirm() {
+                alertify.confirm('Confirm delete?');
+            }
+            // toastr
+            function toastrSimple() {
+                toastr["success"]("My name is Inigo Montoya. You killed my father. Prepare to die!");
+            }
+        </script>
     </body>
 </html>
