@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>dashmin</title>
+        <title>dashmin - Forms</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="assets/img/brand/icon.png">
         <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
@@ -38,56 +38,50 @@
         <div class="d-flex">
             <div class="sidebar sidebar-dark bg-dark">
                 <ul class="list-unstyled">
-                    <li class="active"><a href="index.html"><i class="icon fa fa-home"></i> Home</a></li>
-                    <li><a href="forms.html"><i class="icon fa fa-edit"></i> Forms</a></li>
+                    <li><a href="index.html"><i class="icon fa fa-home"></i> Home</a></li>
+                    <li class="active"><a href="forms.html"><i class="icon fa fa-edit"></i> Forms</a></li>
                     <li><a href="alerts.html"><i class="icon fa fa-comment-alt"></i> Alerts</a></li>
                     <li><a href="tables.html"><i class="icon fa fa-table"></i> Tables</a></li>
                     <li><a href="login.html"><i class="icon fa fa-sign-in-alt"></i> Login</a></li>
                 </ul>
             </div>
             <div class="content p-4">
-                <h2 class="mb-4">Home</h2>
-                <div class="row mb-4">
-                    <div class="col-md">
-                        <div class="d-flex border">
-                            <div class="bg-primary text-light p-4">
-                                <div class="d-flex align-items-center h-100">
-                                    <i class="fa fa-3x fa-fw fa-cog"></i>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 bg-white p-4">
-                                <p class="text-uppercase text-secondary mb-0">Usage</p>
-                                <h3 class="font-weight-bold mb-0">10%</h3>
-                            </div>
-                        </div>
+                <h2 class="mb-4">Forms</h2>
+                <div class="card mb-4">
+                    <div class="card-header bg-white font-weight-bold">
+                        Select2
                     </div>
-                    <div class="col-md">
-                        <div class="d-flex border">
-                            <div class="bg-success text-light p-4">
-                                <div class="d-flex align-items-center h-100">
-                                    <i class="fa fa-3x fa-fw fa-comments"></i>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 bg-white p-4">
-                                <p class="text-uppercase text-secondary mb-0">Tickets</p>
-                                <h3 class="font-weight-bold mb-0">374</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="d-flex border">
-                            <div class="bg-danger text-light p-4">
-                                <div class="d-flex align-items-center h-100">
-                                    <i class="fa fa-3x fa-fw fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1 bg-white p-4">
-                                <p class="text-uppercase text-secondary mb-0">Sales</p>
-                                <h3 class="font-weight-bold mb-0">73,829</h3>
-                            </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="select2">Select Options</label>
+                            <select name="select2" id="select2" class="form-control select2">
+                                <option>Option</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                            </select>
                         </div>
                     </div>
                 </div>
+                <div class="card mb-4">
+                    <div class="card-header bg-white font-weight-bold">
+                        iCheck
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label><input type="checkbox" name="checkbox[]">&nbsp;&nbsp;Checkbox</label><br>
+                                <label><input type="checkbox" name="checkbox[]" checked>&nbsp;&nbsp;Checkbox checked</label><br>
+                                <label><input type="checkbox" name="checkbox[]" disabled checked>&nbsp;&nbsp;Checkbox disabled</label><br>
+                            </div>
+                            <div class="col-md-6">
+                                <label><input type="radio" name="radio">&nbsp;&nbsp;Radio</label><br>
+                                <label><input type="radio" name="radio" checked>&nbsp;&nbsp;Radio checked</label><br>
+                                <label><input type="radio" name="radio" disabled checked>&nbsp;&nbsp;Radio disabled</label><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
             </div>
         </div>
         <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -100,5 +94,16 @@
         <script src="assets/vendor/toastr/toastr.min.js"></script>
         <script src="assets/js/scripts.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script>
+            $(document).ready(function(){
+                // Select2
+                $('.select2').select2();
+                // iCheck
+                $('input').iCheck({
+                    checkboxClass: 'icheckbox_square-blue',
+                    radioClass: 'iradio_square-blue',
+                });
+            });
+        </script>
     </body>
 </html>
