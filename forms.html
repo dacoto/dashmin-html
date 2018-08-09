@@ -5,22 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>dashmin - Forms</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="assets/img/brand/icon.png">
-        <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css?v=1.1.0" />
-        <link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/all.css?v=1.1.0" />
-        <link rel="stylesheet" type="text/css" href="assets/vendor/alertifyjs/css/alertify.min.css?v=1.1.0" />
-        <link rel="stylesheet" type="text/css" href="assets/vendor/alertifyjs/css/themes/default.min.css?v=1.1.0" />
-        <link rel="stylesheet" type="text/css" href="assets/vendor/icheck/skins/all.css?v=1.1.0" />
-        <link rel="stylesheet" type="text/css" href="assets/vendor/select2/css/select2.min.css?v=1.1.0" />
-        <link rel="stylesheet" type="text/css" href="assets/vendor/toastr/toastr.min.css?v=1.1.0" />
-        <link rel="stylesheet" type="text/css" href="assets/css/styles.css?v=1.1.0" />
-        <link rel="stylesheet" type="text/css" href="assets/css/custom.css?v=1.1.0" />
+        <link rel="shortcut icon" href="dist/img/brand/icon.png">
+        <link rel="stylesheet" type="text/css" href="dist/css/main.css?v=2.0.0" />
     </head>
     <body class="bg-light">
         <nav class="navbar navbar-expand navbar-dark bg-primary">
             <a class="sidebar-toggle mr-3" href="#"><i class="fa fa-bars"></i></a>
             <a class="navbar-brand" href="index.html">
-                <img class="navbar-icon d-inline-block align-top" src="assets/img/brand/icon.svg">
+                <img class="navbar-icon d-inline-block align-top" src="dist/img/brand/icon.svg">
                 <span class="navbar-title">dashmin</span>
             </a>
             <div class="navbar-collapse collapse">
@@ -66,44 +58,48 @@
                 </div>
                 <div class="card mb-4">
                     <div class="card-header bg-white font-weight-bold">
-                        iCheck
+                        iCheck Bootstrap
                     </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <label><input type="checkbox" name="checkbox[]">&nbsp;&nbsp;Checkbox</label><br>
-                                <label><input type="checkbox" name="checkbox[]" checked>&nbsp;&nbsp;Checkbox checked</label><br>
-                                <label><input type="checkbox" name="checkbox[]" disabled checked>&nbsp;&nbsp;Checkbox disabled</label><br>
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="checkbox1" />
+                                    <label for="checkbox1">Checkbox</label>
+                                </div>
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="checkbox2" checked/>
+                                    <label for="checkbox2">Checkbox checked</label>
+                                </div>
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="checkbox3" checked disabled/>
+                                    <label for="checkbox3">Checkbox disabled</label>
+                                </div>
                             </div>
                             <div class="col-md-6">
-                                <label><input type="radio" name="radio">&nbsp;&nbsp;Radio</label><br>
-                                <label><input type="radio" name="radio" checked>&nbsp;&nbsp;Radio checked</label><br>
-                                <label><input type="radio" name="radio" disabled checked>&nbsp;&nbsp;Radio disabled</label><br>
+                                <div class="icheck-primary">
+                                    <input type="radio" id="radio1" />
+                                    <label for="radio1">Radio</label>
+                                </div>
+                                <div class="icheck-primary">
+                                    <input type="radio" id="radio2" checked/>
+                                    <label for="radio2">Radio checked</label>
+                                </div>
+                                <div class="icheck-primary">
+                                    <input type="radio" id="radio3" disabled checked/>
+                                    <label for="radio3">Radio disabled</label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>            
             </div>
         </div>
-        <script src="assets/vendor/jquery/jquery.min.js?v=1.1.0"></script>
-        <script src="assets/vendor/popper/popper.min.js?v=1.1.0"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.min.js?v=1.1.0"></script>
-        <script src="assets/vendor/alertifyjs/alertify.min.js?v=1.1.0"></script>
-        <script src="assets/vendor/listjs/list.min.js?v=1.1.0"></script>
-        <script src="assets/vendor/icheck/icheck.min.js?v=1.1.0"></script>
-        <script src="assets/vendor/select2/js/select2.full.min.js?v=1.1.0"></script>
-        <script src="assets/vendor/toastr/toastr.min.js?v=1.1.0"></script>
-        <script src="assets/js/scripts.js?v=1.1.0"></script>
-        <script src="assets/js/custom.js?v=1.1.0"></script>
+        <script src="dist/js/main.js?v=2.0.0"></script>
         <script>
             $(document).ready(function(){
                 // Select2
                 $('.select2').select2();
-                // iCheck
-                $('input').iCheck({
-                    checkboxClass: 'icheckbox_square-blue',
-                    radioClass: 'iradio_square-blue',
-                });
             });
         </script>
     </body>
