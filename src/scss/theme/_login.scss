@@ -1,0 +1,54 @@
+.my-login-page {
+    .brand {
+        width: 90px;
+        height: 90px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin: 40px auto;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .card-wrapper {
+        width: 400px;
+    }
+
+    .card {
+        border-color: transparent;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+
+        &.fat {
+            padding: 10px;
+        }
+
+        .card-title {
+            margin-bottom: 30px;
+        }
+    }
+
+    .form-control {
+        border-width: 2.3px;
+    }
+
+    .form-group label {
+        width: 100%;
+    }
+
+    .margin-top20 {
+        margin-top: 20px;
+    }
+
+    .no-margin {
+        margin: 0;
+    }
+
+    .footer {
+        margin: 40px 0;
+        color: #888;
+        text-align: center;
+    }
+}

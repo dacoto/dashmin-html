@@ -1,0 +1,36 @@
+.navbar-dark {
+    .navbar-nav .nav-link, .navbar-text {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .navbar-nav .nav-link {
+        &:focus, &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    .sidebar-toggle {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+.navbar-light {
+    .navbar-nav .nav-link, .navbar-text {
+        color: rgba(0, 0, 0, 0.75);
+    }
+
+    .navbar-nav .nav-link {
+        &:focus, &:hover {
+            color: rgba(0, 0, 0, 1);
+        }
+    }
+
+    .sidebar-toggle {
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
+.navbar-icon {
+    margin-right: 5px;
+    width: 25px;
+}

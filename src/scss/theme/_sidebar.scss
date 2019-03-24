@@ -1,0 +1,90 @@
+.sidebar {
+    min-width: 230px;
+    max-width: 230px;
+    min-height: calc(100vh - 49px);
+    transition: all 0.3s;
+
+    ul {
+        li a {
+            display: block;
+            padding: .75rem 1rem;
+            text-decoration: none;
+        }
+
+        ul a {
+            padding-left: 2.5rem;
+        }
+    }
+
+    [data-toggle="collapse"] {
+        position: relative;
+
+        &:before {
+            content: "\f0d7";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 1rem;
+        }
+    }
+
+    [aria-expanded="true"]:before {
+        content: "\f0d8";
+    }
+
+    &.toggled {
+        margin-left: -230px;
+    }
+}
+
+.sidebar-dark {
+    ul {
+        li a {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        ul a {
+            background: rgba(0, 0, 0, 0.15);
+        }
+
+        li a:hover, .active a {
+            color: rgba(255, 255, 255, 1);
+            background: rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    [aria-expanded="true"] {
+        background: rgba(0, 0, 0, 0.15);
+    }
+}
+
+.sidebar-light {
+    ul {
+        li a {
+            color: rgba(0, 0, 0, 0.75);
+        }
+
+        ul a {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        li a:hover, .active a {
+            color: rgba(0, 0, 0, 1);
+            background: rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    [aria-expanded="true"] {
+        background: rgba(0, 0, 0, 0.05);
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        margin-left: -230px;
+
+        &.toggled {
+            margin-left: 0;
+        }
+    }
+}
