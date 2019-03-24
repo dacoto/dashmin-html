@@ -1,0 +1,20 @@
+.accordion .card-header {
+    padding: 0;
+
+    a {
+        padding: .75rem 1.25rem;
+        display: block;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .collapse-icon:before {
+        content: "\f068";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+
+    .collapsed .collapse-icon:before {
+        content: "\f067";
+    }
+}

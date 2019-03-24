@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+
+    &.my-login-page {
+        background-color: #f7f9fb;
+        font-size: 14px;
+    }
+}
+
+html {
+    height: 100%;
+    font-size: 14px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.content {
+    width: 100%;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.sort {
+    &:after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        content: "";
+        position: relative;
+        top: -10px;
+        right: -5px;
+    }
+
+    &.asc:after {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #fff;
+        content: "";
+        position: relative;
+        top: 4px;
+        right: -5px;
+    }
+
+    &.desc:after {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #fff;
+        content: "";
+        position: relative;
+        top: -4px;
+        right: -5px;
+    }
+}
