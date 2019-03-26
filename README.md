@@ -3,7 +3,7 @@ Plantilla de dashboard y administración basada en bootstrap 4.x.
 
 Contruida de manera ordenada y sencilla.
 
-![Image of dashmin](dist/images/brand/dashmin.gif?v=2.3.0)
+![Image of dashmin](dist/images/brand/dashmin.gif?v=2.4.0)
 
 Dependencias incluidas
 ----
