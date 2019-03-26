@@ -1,31 +1,58 @@
 var path = require('path');
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-    mode: "development",
     entry: [
         './src/js/app.js',
         './src/scss/app.scss',
     ],
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/main.js'
+        filename: 'main.js',
     },
     module: {
         rules: [
             {
-                test: /\.scss$/,
-                use: [
-                    "style-loader",
+                test: /\.(css|scss)(\?.*$|$)/,
+                loader: [
+                    MiniCSSExtractPlugin.loader,
                     "css-loader",
-                    "sass-loader"
+                    'sass-loader'
                 ]
             },
             {
-                test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+                test: /\.(png|svg|jpg|gif)$/,
                 use: [
-                    'url-loader'
-                ]
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'images',
+                        },
+                    },
+                ],
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'fonts',
+                        },
+                    },
+                ],
             }
         ]
-    }
+    },
+    plugins: [
+        new MiniCSSExtractPlugin({
+            filename: "main.css",
+        })
+    ],
+    optimization: {
+        minimizer: [
+            new OptimizeCSSAssetsPlugin({})
+        ]
+    },
 };
