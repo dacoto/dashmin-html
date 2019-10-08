@@ -1,7 +1,7 @@
 {
     "name": "dashmin",
     "version": "2.5.1",
-    "description": "Plantilla de dashboard y administración basada en bootstrap 4.x.",
+    "description": "Admin dashboard based on bootstrap 4.x",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/dacoto/dashmin.git"
