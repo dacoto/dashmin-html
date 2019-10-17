@@ -1,13 +1,13 @@
 ![Image of dashmin](dist/images/brand/dashmin.gif)
 <h1 align="center">
-    Dashmin | Bootstrap dashboard
+    Dashmin | Bootstrap 4 Dashboard
     <br>
     <a href="https://github.com/dacoto/dashmin"><img src="https://img.shields.io/github/v/release/dacoto/dashmin" alt="Latest Stable Version"></a>
     <a href="https://github.com/dacoto/dashmin"><img src="https://img.shields.io/github/license/dacoto/dashmin" alt="License"></a>
     <a href="https://github.com/dacoto/dashmin"><img src="https://img.shields.io/github/last-commit/dacoto/notify.js.svg" alt="Last commit"></a>
 </h1>
 
-Dashboard and administration template based on bootstrap 4.x.
+Dashboard template based on bootstrap 4.x.
 
 [VIEW DEMO](https://dashmin.dacoto.dev/)
 
