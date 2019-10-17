@@ -1,14 +1,18 @@
-# Dashmin
-Plantilla de dashboard y administración basada en bootstrap 4.x.
+![Image of dashmin](dist/images/brand/dashmin.gif)
+<h1 align="center">
+    Dashmin | Bootstrap dashboard
+    <br>
+    <a href="https://github.com/dacoto/dashmin"><img src="https://img.shields.io/github/v/release/dacoto/dashmin" alt="Latest Stable Version"></a>
+    <a href="https://github.com/dacoto/dashmin"><img src="https://img.shields.io/github/license/dacoto/dashmin" alt="License"></a>
+    <a href="https://github.com/dacoto/dashmin"><img src="https://img.shields.io/github/last-commit/dacoto/notify.js.svg" alt="Last commit"></a>
+</h1>
 
-Contruida de manera ordenada y sencilla.
+Dashboard and administration template based on bootstrap 4.x.
 
-![Image of dashmin](dist/images/brand/dashmin.gif?v=2.5.1)
+[VIEW DEMO](https://dashmin.dacoto.dev/)
 
-Dependencias incluidas
-----
-| Plugin | Documentación |
-| ------ | ------ |
+## Dependencies
+
 | fontawesome-free | <a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/</a> |
 | bootstrap | <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a> |
 | icheck-bootstrap | <a href="https://bantikyan.github.io/icheck-bootstrap/" target="_blank">https://bantikyan.github.io/icheck-bootstrap/</a> |
@@ -19,6 +23,6 @@ Dependencias incluidas
 | sweetalert | <a href="https://sweetalert.js.org/" target="_blank">https://sweetalert.js.org/</a> |
 | toastr | <a href="http://codeseven.github.io/toastr/" target="_blank">http://codeseven.github.io/toastr/</a> |
 
-Licencia
-----
+## License
+
 MIT
