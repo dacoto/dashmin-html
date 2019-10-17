@@ -13,6 +13,8 @@ Dashboard and administration template based on bootstrap 4.x.
 
 ## Dependencies
 
+|Package|Docs|
+|--- |--- |
 | fontawesome-free | <a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/</a> |
 | bootstrap | <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a> |
 | icheck-bootstrap | <a href="https://bantikyan.github.io/icheck-bootstrap/" target="_blank">https://bantikyan.github.io/icheck-bootstrap/</a> |
