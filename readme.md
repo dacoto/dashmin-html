@@ -2,9 +2,9 @@
 <h1 align="center">
     Dashmin | Bootstrap 4 Dashboard
     <br>
-    <a href="https://github.com/dacoto/dashmin"><img src="https://img.shields.io/github/v/release/dacoto/dashmin" alt="Latest Stable Version"></a>
-    <a href="https://github.com/dacoto/dashmin"><img src="https://img.shields.io/github/license/dacoto/dashmin" alt="License"></a>
-    <a href="https://github.com/dacoto/dashmin"><img src="https://img.shields.io/github/last-commit/dacoto/dashmin.svg" alt="Last commit"></a>
+    <a href="https://github.com/dacoto/dashmin-html"><img src="https://img.shields.io/github/v/release/dacoto/dashmin-html" alt="Latest Stable Version"></a>
+    <a href="https://github.com/dacoto/dashmin-html"><img src="https://img.shields.io/github/license/dacoto/dashmin-html" alt="License"></a>
+    <a href="https://github.com/dacoto/dashmin-html"><img src="https://img.shields.io/github/last-commit/dacoto/dashmin-html.svg" alt="Last commit"></a>
 </h1>
 
 Dashboard template based on bootstrap 4.x.
