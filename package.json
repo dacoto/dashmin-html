@@ -4,7 +4,7 @@
     "description": "Admin dashboard based on bootstrap 4.x",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/dacoto/dashmin.git"
+        "url": "git+https://github.com/dacoto/dashmin-html.git"
     },
     "keywords": [
         "bootstrap",
@@ -17,9 +17,9 @@
     "author": "dacoto",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/dacoto/dashmin/issues"
+        "url": "https://github.com/dacoto/dashmin-html/issues"
     },
-    "homepage": "https://github.com/dacoto/dashmin#readme",
+    "homepage": "https://github.com/dacoto/dashmin-html#readme",
     "scripts": {
         "dev": "npm run development",
         "development": "webpack --mode=development",
