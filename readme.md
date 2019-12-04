@@ -9,7 +9,7 @@
 
 Dashboard template based on bootstrap 4.x.
 
-[VIEW DEMO](https://dashmin.dacoto.dev/)
+[VIEW DEMO](https://dashmin-html.dacoto.dev/)
 
 ## Dependencies
 
