@@ -1,6 +1,6 @@
 {
     "name": "dashmin",
-    "version": "2.5.2",
+    "version": "2.6.0",
     "description": "Admin dashboard based on bootstrap 4.x",
     "repository": {
         "type": "git",
